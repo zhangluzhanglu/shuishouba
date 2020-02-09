@@ -1,0 +1,56 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/IndividualTaxCalculation/IndividualTaxCalculation",
+			"style": {
+				"navigationBarTitleText": "个人所得税计算"
+			}
+		}, {
+			"path": "pages/Calculator/Calculator",
+			"style": {
+				"navigationBarTitleText": "普通计算器"
+			}
+		}, {
+			"path": "pages/TaxInformation/TaxInformation",
+			"style": {
+				"navigationBarTitleText": "税收资讯"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "税收吧",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/Calculator/Calculator",
+				"iconPath": "static/images/Calculator.png",
+				"selectedIconPath": "static/images/selectedCalculator.png",
+				"text": "普通计算器"
+			}, {
+				"pagePath": "pages/IndividualTaxCalculation/IndividualTaxCalculation",
+				"iconPath": "static/images/IndividualTaxCalculation.png",
+				"selectedIconPath": "static/images/selectedIndividualTaxCalculation.png",
+				"text": "个税计算器"
+			},
+			{
+				"pagePath": "pages/TaxInformation/TaxInformation",
+				"iconPath": "static/images/TaxInformation.png",
+				"selectedIconPath": "static/images/selectedTaxInformation.png",
+				"text": "税收资讯"
+			}
+		]
+	}
+}
