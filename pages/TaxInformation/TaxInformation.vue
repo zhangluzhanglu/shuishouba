@@ -2,7 +2,7 @@
 <template>
 	<view class="TaxInfo">
 		<view>2020年个人所得税计算方式表</view>
-		<image src="../../static/images/2020年个人所得税计算方式.png"></image>
+		<image src="../../static/images/2020-tax-method.png"></image>
 		<view class="des">
 			
 		1、工资范围在1-5000元之间的，包括5000元，适用个人所得税税率为0%;

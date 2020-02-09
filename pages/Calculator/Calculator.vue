@@ -9,40 +9,42 @@
 </template>
 
 <script>
+	import Calculator from "./Calstack.js";
 	export default {
 		data() {
 			return {
 				opts: [
 					'(', ')', 'Del', 'Clear', 7, 8, 9, '+', 4, 5, 6, '-', 1, 2, 3, '×', 0, '.', '=', '÷',
 				],
-				express:"",
+				express: "",
 			};
 		},
-		methods:{
-			manageBtn(e){
-				e=e||event;
+		methods: {
+			manageBtn(e) {
+				e = e || event;
 				var text = e.target.dataset.v;
-				if(text!=undefined){
-					if(text==="="){
-						try{
-						var res=eval(this.express);
-						this.express=this.express+"="+res;
-						}
-						catch(err){
+				if (text != undefined) {
+					if (text === "=") {
+						try {
+							var res = Calculator(this.express)
+							// var res = new Rpn("0"+this.express).calculate()
+							this.express = res;
+						} catch (err) {
 							console.log(err);
 							uni.showModal({
-								content:"请输入正确的表达式！",
-								showCancel:false
+								content: "请输入正确的表达式！",
+								showCancel: false
 							})
 						}
-					}
-					else if(text==="Del"){
-						this.express=this.express.slice(0,-1);
-					}
-					else if(text==="Clear"){
-						this.express="";
-					}
-					else this.express+=text;
+					} else if (text === "Del") {
+						this.express = this.express.slice(0, -1);
+					} else if (text === "Clear") {
+						this.express = "";
+					} else if (text === "÷") {
+						this.express += "/";
+					} else if (text === "×") {
+						this.express += "*";
+					} else this.express += text;
 				}
 			}
 		}
@@ -59,7 +61,7 @@
 			height: 60px;
 			margin: 5px;
 			margin-top: 20px;
-			word-wrap:break-word
+			word-wrap: break-word
 		}
 
 		.opt {
