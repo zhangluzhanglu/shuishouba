@@ -10,6 +10,10 @@
 
 <script>
 	import Calculator from "./Calstack.js";
+	import {
+		zl_calculator_zl
+	} from 'zl_calculator_zl';
+
 	export default {
 		data() {
 			return {
@@ -26,8 +30,8 @@
 				if (text != undefined) {
 					if (text === "=") {
 						try {
-							var res = Calculator(this.express)
-							// var res = new Rpn("0"+this.express).calculate()
+							if (eval) var res = eval(this.express)
+							else var res = zl_calculator_zl(this.express)
 							this.express = res;
 						} catch (err) {
 							console.log(err);

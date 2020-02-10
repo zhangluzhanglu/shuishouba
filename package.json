@@ -1,0 +1,23 @@
+{
+  "name": "shuishouba",
+  "version": "1.0.0",
+  "description": "主要是和税收相关的一些功能，比如个税计算器",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangluzhanglu/shuishouba.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangluzhanglu/shuishouba/issues"
+  },
+  "homepage": "https://github.com/zhangluzhanglu/shuishouba#readme",
+  "dependencies": {
+    "zl_calculator_zl": "^1.0.3"
+  }
+}
