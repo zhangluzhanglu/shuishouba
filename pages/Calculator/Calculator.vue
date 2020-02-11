@@ -91,6 +91,12 @@
 				height: 50px;
 				line-height: 50px;
 				text-align: center;
+				&:hover {
+					box-shadow: 0px 0px 5px green;
+					border: 1px solid green;
+					color: green;
+					// background-color: white;
+				}
 			}
 		}
 	}
