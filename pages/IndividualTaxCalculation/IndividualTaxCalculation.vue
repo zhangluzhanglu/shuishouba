@@ -75,6 +75,7 @@
 <style lang="scss">
 	page {
 		background-color: rgb(43, 40, 40);
+		font-size: 16px; //让其符号大小在不同设备上保存一致
 	}
 
 	.taxCal {

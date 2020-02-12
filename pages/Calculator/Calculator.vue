@@ -9,7 +9,6 @@
 </template>
 
 <script>
-	import Calculator from "./Calstack.js";
 	import {
 		zl_calculator_zl
 	} from 'zl_calculator_zl';
@@ -59,7 +58,7 @@
 	page {
 		background-color: rgb(53, 53, 53);
 		color: white;
-
+		font-size: 20px; //让其符号大小在不同设备上保存一致
 		.content {
 			border: 1px solid white;
 			height: 60px;
@@ -71,6 +70,7 @@
 		.opt {
 			background-color: rgb(195, 191, 183);
 			color: black;
+			// font-size: 16px;
 		}
 
 		.num {
